@@ -1,0 +1,35 @@
+{
+  "name": "gustarus/yii2-activerecord",
+  "description": "A record to manage multiple relations and with some good helpers",
+  "keywords": [
+    "yii2",
+    "yii2-activerecord",
+    "active record",
+    "gustarus"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/gustarus/yii2-activerecord/issues?state=open",
+    "forum": "https://gitter.im/gustarus/yii2-activerecord",
+    "source": "https://github.com/gustarus/yii2-activerecord"
+  },
+  "authors": [
+    {
+      "name": "Pavel Kondratenko",
+      "email": "iam@kondratenko.me",
+      "homepage": "http://kondratenko.me"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "^2.0.0",
+    "yiisoft/yii2-bootstrap": "^2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "gustarus\\activerecord\\": ""
+    }
+  }
+}

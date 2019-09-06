@@ -6,7 +6,7 @@
  * Time: 12:27
  */
 
-namespace webulla\activerecord;
+namespace gustarus\activerecord;
 
 use Yii;
 use yii\base\InvalidConfigException;

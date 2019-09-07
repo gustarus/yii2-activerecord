@@ -407,9 +407,10 @@ class ActiveRecord extends BaseActiveRecord {
    * @throws BadRequestHttpException
    * @throws \yii\base\InvalidConfigException
    */
-  public function loadRelations($data, $relationsNames) {
+  public function loadRelations($data, $relationsNames = null) {
     $useRelations = [];
     $defaultRelations = $this->getRelationsToKeepUpdated();
+    $relationsNames = $relationsNames ?: array_keys($defaultRelations);
     foreach ($relationsNames as $relationName) {
       if (!isset($defaultRelations[$relationName])) {
         throw new InvalidConfigException('
